@@ -35,7 +35,7 @@ class Student
   
   def save 
     sql = <<-SQL 
-    
+    INSERT 
   end 
 
   # Remember, you can access your database connection anywhere in this class
