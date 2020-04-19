@@ -63,9 +63,8 @@ class Student
   
   def self.find_by_name(name)
     sql = "SELECT * FROM students WHERE name = ?"
-    row = DB[:conn].execute(sql, name).map do |row|
-    self.new_from_db(row)
-    end
+    row = DB[:conn].execute(sql, name)[0]
+    Student.new(row[0], row[1], row[2])
   end 
   
   def update 
