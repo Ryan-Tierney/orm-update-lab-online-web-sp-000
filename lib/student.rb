@@ -44,7 +44,7 @@ class Student
       SQL
       
       DB[:conn].execute(sql, self.name, self.grade)
-      @id = DB[:conn].execute(sql, select_last_from_rowid )
+      @id = DB[:conn].execute(sql, "SELECT")
   end 
 
   # Remember, you can access your database connection anywhere in this class
