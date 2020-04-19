@@ -36,9 +36,10 @@ class Student
   def save 
     sql = <<-SQL 
     if self.id 
-    update.id 
+      update.id 
     
-    
+    else
+      
   end 
 
   # Remember, you can access your database connection anywhere in this class
