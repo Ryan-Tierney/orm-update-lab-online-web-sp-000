@@ -39,7 +39,9 @@ class Student
     
     else
       sql = <<-SQL 
-      INSERT INTO 
+      INSERT INTO students (name, grade)
+      VALUES (?, ?)
+      
   end 
 
   # Remember, you can access your database connection anywhere in this class
